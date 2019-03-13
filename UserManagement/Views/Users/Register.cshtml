@@ -1,0 +1,34 @@
+﻿@using UserManagement.Models;
+@model RegisterUserViewModel;
+
+    <section>
+        @using (Html.BeginForm())
+        {
+            @Html.LabelFor(m => m.FirstName)
+            <div>
+                @Html.TextBoxFor(m => m.FirstName)
+            </div>
+
+            @Html.LabelFor(m => m.LastName)
+            <div>
+                @Html.TextBoxFor(m => m.LastName)
+            </div>
+
+            @Html.LabelFor(m => m.BirthDate)
+            <div>
+                @Html.TextBoxFor(m => m.BirthDate)
+            </div>
+
+
+            @Html.LabelFor(m => m.EmailAddress)
+            <div>
+                @Html.TextBoxFor(m => m.EmailAddress)
+            </div>
+
+            <hr />
+
+            <div>
+                <input type="submit" name="register" value="Register user" />
+            </div>
+        }
+    </section>
